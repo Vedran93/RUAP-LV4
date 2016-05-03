@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumTests
@@ -20,7 +20,7 @@ namespace SeleniumTests
         [SetUp]
         public void SetupTest()
         {
-            driver = new FirefoxDriver();
+            driver = new InternetExplorerDriver("C:\\Users\\Student\\Desktop");
             baseURL = "http://demo.opencart.com/";
             verificationErrors = new StringBuilder();
         }
